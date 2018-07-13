@@ -87,7 +87,7 @@ header img {
 
 .items {
   display: inline-flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 3rem auto;
   width: 100%;
 }
@@ -116,7 +116,32 @@ header img {
   padding: 0.5rem;
 }
 
-/* */
+/* Store Info */
+
+.storeInfo {
+  max-width: 960px;
+}
+
+.infoDetails {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.detail {
+  width: 35%
+}
+
+.detailTitle {
+  background-color: black;
+  padding: 1rem 2rem;
+}
+
+.detailInfo {
+    color: black;
+}
+
+
 
 
 /* */

@@ -6,23 +6,27 @@ html, body {
   color: white;
 }
 
-/* TODO: Fix container sizing versus entire page */
-
-header, body, footer {
+.siteContainer {
   width: 960px;
+  margin: 0 auto;
 }
 
+/* TODO: Fix container sizing versus entire page */
+
 /* Header */
+
 header {
-  display: flex;
   background-color: black;
+}
+
+header .siteContainer {
+  display: flex;
   align-items: center;
 }
 
 header img {
   height: 1.5rem;
   margin: 0.66rem 1rem 0.66rem 0.5rem;
-  padding-left: 5rem;
 }
 
 #title {
@@ -46,7 +50,6 @@ header img {
   width: 20rem;
   height: 10rem;
   margin-top: 9rem;
-  margin-left: 5rem;
   background-color: black;
   padding-left: 3rem;
   text-transform: uppercase;
@@ -66,10 +69,13 @@ header img {
 /* Nav Menu */
 
 .navMenu {
+  background-color: firebrick;
+}
+
+.siteSections {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: firebrick;
   padding: 0.75rem 0;
 }
 

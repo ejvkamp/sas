@@ -1,6 +1,7 @@
 /* Global Settings */
 html, body {
   width: 960px;
+  margin: auto;
   font-size: 18px;
   font-family: Helvetica;
   color: white;
@@ -16,6 +17,7 @@ header {
 header img {
   height: 1.5rem;
   margin: 0.66rem 1rem 0.66rem 0.5rem;
+  padding-left: 5rem;
 }
 
 header p {
@@ -25,7 +27,37 @@ header p {
 
 /* Hero */
 
+.hero-section {
+  background-image: url("../images/moto.jpeg");
+  height: 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
 
+.hero-text {
+  display: inline-flex;
+  flex-direction: column;
+  postion: relative;
+  width: 20rem;
+  height: 10rem;
+  margin-top: 9rem;
+  margin-left: 5rem;
+  background-color: black;
+  padding-left: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hero-text #newArrival {
+  padding-top: 2rem;
+  padding-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.hero-text #invDesc {
+  font-size: 2rem;
+}
 /* */
 
 

@@ -58,8 +58,16 @@ header p {
 .hero-text #invDesc {
   font-size: 2rem;
 }
-/* */
 
+/* Nav Menu */
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: firebrick;
+  padding: 0.75rem 0;
+}
 
 /* */
 

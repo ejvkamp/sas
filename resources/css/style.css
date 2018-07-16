@@ -1,6 +1,7 @@
 /* Global Settings */
 html, body {
   margin: auto;
+  min-width: 470px;
   font-size: 18px;
   font-family: Helvetica;
   color: white;
@@ -8,6 +9,7 @@ html, body {
 
 .siteContainer {
   width: 960px;
+  min-width: 470px;
   margin: 0 auto;
 }
 
@@ -32,6 +34,10 @@ header img {
 }
 
 /* Hero */
+
+.hero-sectionMobile {
+  display: none;
+}
 
 .hero-section {
   background-image: url("../images/moto.jpeg");
@@ -167,6 +173,8 @@ footer .siteContainer {
 
 @media only screen and (max-width: 1024px) {
 
+/* 1024:Hero Section */
+
   .hero-text #newArrival {
     padding-top: 2rem;
     padding-bottom: 0.5rem;
@@ -176,6 +184,8 @@ footer .siteContainer {
   .hero-text #invDesc {
     font-size: 1.5rem;
   }
+
+/* 1024:Main Nav */
 
   .siteSections, .siteSections span {
     display: none;
@@ -188,6 +198,8 @@ footer .siteContainer {
     padding: .75rem;
   }
 
+/* 1024:Inventory */
+
   .item {
     width: 47%;
   }
@@ -196,5 +208,86 @@ footer .siteContainer {
     display: none;
   }
 
+}
+
+/* Media query max-width 470 */
+
+@media only screen and (max-width: 470px) {
+
+  .siteContainer {
+    width: 470px;
+  }
+
+  /* 470:Hero Section */
+
+  .hero-section {
+    display: none;
+  }
+
+  .hero-sectionMobile {
+    display: flex;
+    background-image: url("../images/moto.jpeg");
+    height: 15rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+  }
+
+  .hero-text {
+    display: inline-block;
+    width: 100%;
+    height: 5rem;
+    margin-top: 10rem;
+    padding-left: 2rem;
+  }
+
+  .hero-text #newArrival {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.77rem;
+  }
+
+  .hero-text #invDesc {
+    font-size: 1rem;
+  }
+
+  /* 470:Main Nav */
+
+  .siteSectionsMobile {
+    max-width: 470px;
+  }
+
+  /* 470:Inventory */
+
+  .items {
+    justify-content: center;
+  }
+
+  .item {
+    width: 90%;
+  }
+
+  .item.watch {
+    display: none;
+  }
+
+  .infoDetails {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detail {
+    width: 90%;
+  }
+
+  .detailInfo p {
+    padding-bottom: 0.5rem;
+  }
+
+  /* 470:Footer */
+
+  footer .siteContainer {
+      justify-content: center;
+  }
 
 }

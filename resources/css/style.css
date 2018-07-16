@@ -77,7 +77,11 @@ header img {
   padding: 0.75rem 0;
 }
 
-.siteSections span:hover {
+.siteSectionsMobile {
+  display: none;
+}
+
+.siteSections span:hover, .siteSectionsMobile span:hover {
   color: black;
   cursor: default;
 }
@@ -89,10 +93,9 @@ header img {
 }
 
 .items {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
-  margin: 3rem auto;
-  width: 100%;
+  margin: 3rem 0;
 }
 
 .item {
@@ -106,7 +109,6 @@ header img {
   height: 9rem;
   border: 4px solid black;
   padding: 2rem 0;
-  max-width: 100%;
 }
 
 .item-image img {
@@ -161,4 +163,38 @@ footer .siteContainer {
   padding-top: 0.25rem;
 }
 
-/* TODO add media query sections */
+/* Media query max-width 1024 */
+
+@media only screen and (max-width: 1024px) {
+
+  .hero-text #newArrival {
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    font-size: .75rem;
+  }
+
+  .hero-text #invDesc {
+    font-size: 1.5rem;
+  }
+
+  .siteSections, .siteSections span {
+    display: none;
+  }
+
+  .siteSectionsMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .75rem;
+  }
+
+  .item {
+    width: 47%;
+  }
+
+  .item.glasses {
+    display: none;
+  }
+
+
+}
